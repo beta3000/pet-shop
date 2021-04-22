@@ -42,7 +42,9 @@
     "jwtSecretKey": "MjBlNWMxZGZiMWIxNGRhZmU2YzNlOTU1YjNjOTQzZDljYTc5NTk1ZTdjYWNkOWI5MTU4MGQ4NTIxYjZmZWQxYTA5NjljNjYzYjlmMGIxNmNmNGU4OTU0ZWNiM2MyZmVhZTY0ZjYzZmY1OWYxNjI2NDk4Nzg4MDUyN2U2MmVjM2I=",
     "clientTheme": "none",
     "clientThemeVariant": "",
-    "reactive": false
+    "reactive": false,
+    "entities": ["Product", "ProductCategory", "CustomerDetails", "ShoppingCart", "ProductOrder", "PetType", "Pet"],
+    "lastLiquibaseTimestamp": 1619097946000
   },
   "git-provider": "GitHub",
   "git-company": "beta3000",

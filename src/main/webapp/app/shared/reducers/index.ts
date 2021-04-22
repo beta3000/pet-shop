@@ -12,6 +12,34 @@ import activate, { ActivateState } from 'app/modules/account/activate/activate.r
 import password, { PasswordState } from 'app/modules/account/password/password.reducer';
 import settings, { SettingsState } from 'app/modules/account/settings/settings.reducer';
 import passwordReset, { PasswordResetState } from 'app/modules/account/password-reset/password-reset.reducer';
+// prettier-ignore
+import product, {
+  ProductState
+} from 'app/entities/product/product.reducer';
+// prettier-ignore
+import productCategory, {
+  ProductCategoryState
+} from 'app/entities/product-category/product-category.reducer';
+// prettier-ignore
+import customerDetails, {
+  CustomerDetailsState
+} from 'app/entities/customer-details/customer-details.reducer';
+// prettier-ignore
+import shoppingCart, {
+  ShoppingCartState
+} from 'app/entities/shopping-cart/shopping-cart.reducer';
+// prettier-ignore
+import productOrder, {
+  ProductOrderState
+} from 'app/entities/product-order/product-order.reducer';
+// prettier-ignore
+import petType, {
+  PetTypeState
+} from 'app/entities/pet-type/pet-type.reducer';
+// prettier-ignore
+import pet, {
+  PetState
+} from 'app/entities/pet/pet.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 export interface IRootState {
@@ -25,6 +53,13 @@ export interface IRootState {
   readonly passwordReset: PasswordResetState;
   readonly password: PasswordState;
   readonly settings: SettingsState;
+  readonly product: ProductState;
+  readonly productCategory: ProductCategoryState;
+  readonly customerDetails: CustomerDetailsState;
+  readonly shoppingCart: ShoppingCartState;
+  readonly productOrder: ProductOrderState;
+  readonly petType: PetTypeState;
+  readonly pet: PetState;
   /* jhipster-needle-add-reducer-type - JHipster will add reducer type here */
   readonly loadingBar: any;
 }
@@ -40,6 +75,13 @@ const rootReducer = combineReducers<IRootState>({
   passwordReset,
   password,
   settings,
+  product,
+  productCategory,
+  customerDetails,
+  shoppingCart,
+  productOrder,
+  petType,
+  pet,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar,
 });

@@ -1,0 +1,30 @@
+{
+  "name": "Pet",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "petType",
+      "otherEntityRelationshipName": "pet",
+      "relationshipValidateRules": "required",
+      "relationshipName": "petType",
+      "otherEntityField": "name"
+    }
+  ],
+  "entityTableName": "pet",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210422132546"
+}
